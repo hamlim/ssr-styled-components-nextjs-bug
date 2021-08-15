@@ -1,0 +1,12 @@
+const withMDX = require("@next/mdx")();
+
+module.exports = withMDX({
+  pageExtensions: ["mdx", "jsx", "js", "ts", "tsx"],
+  experimental: {
+    reactRefresh: true,
+    modern: true,
+    reactRoot: "concurrent",
+  },
+  reactStrictMode: true,
+  webpack5: true,
+});
